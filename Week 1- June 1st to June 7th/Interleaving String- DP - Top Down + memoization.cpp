@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int dp[1000][1001];
+    int dp[101][101];
     
     bool check(string s1, string s2, string s3, int n, int m, int len)
     {
@@ -11,6 +11,11 @@ public:
         if(len==0)
         {
             return 1;
+        }
+        
+        if(dp[n][m]!=-1)
+        {
+            return dp[n][m];
         }
         
         int a,b;
