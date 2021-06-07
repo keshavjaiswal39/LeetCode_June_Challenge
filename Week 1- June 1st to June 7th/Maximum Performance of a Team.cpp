@@ -1,6 +1,15 @@
 class Solution {
 public:
     
+//    [&](const pair<int,int> a,const pair<int,int> b)
+//	{
+//             if(a.first == b.first)
+//        {
+//            return a.second>b.second;
+//        }
+//        
+//        return a.first>b.first;
+//    }
     
     int maxPerformance(int n, vector<int>& speed, vector<int>& efficiency, int k) 
     {
